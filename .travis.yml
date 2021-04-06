@@ -15,7 +15,7 @@ install:
   - sudo apt-get install neo4j=1:4.2.3
   - wget https://s3-eu-west-1.amazonaws.com/com.neo4j.graphalgorithms.dist/graph-data-science/neo4j-graph-data-science-1.5.1-standalone.zip
   - unzip neo4j-graph-data-science-1.5.1-standalone.zip
-  - cp neo4j-graph-data-science-1.5.1.jar /var/lib/neo4j/plugins/
+  - sudo cp neo4j-graph-data-science-1.5.1.jar /var/lib/neo4j/plugins/
   - sudo neo4j-admin set-initial-password neo4j
   - echo 'dbms.connector.bolt.listen_address=0.0.0.0:7687' | sudo tee -a /etc/neo4j/neo4j.conf
   - echo 'dbms.security.procedures.unrestricted=gds.*' | sudo tee -a /etc/neo4j/neo4j.conf
