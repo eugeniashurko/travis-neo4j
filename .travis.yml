@@ -20,6 +20,7 @@ install:
   - echo 'dbms.connector.bolt.listen_address=0.0.0.0:7687' | sudo tee -a /etc/neo4j/neo4j.conf
   - cat /etc/neo4j/neo4j.conf
   - sudo service neo4j restart
+  - cypher-shell -a 0.0.0.0 -u neo4j -p neo4j
   
  
 script:
