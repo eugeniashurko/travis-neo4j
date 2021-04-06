@@ -16,6 +16,7 @@ install:
   - pip install .[dev]
   - sudo service neo4j start
   - sudo neo4j-admin set-initial-password neo4j
+  - cypher-shell -u neo4j -p neo4j
  
 script:
   - pytest --cov=./
