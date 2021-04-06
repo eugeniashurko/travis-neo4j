@@ -5,7 +5,7 @@ from neo4j import GraphDatabase
 # Neo4j credentials (should be moved to some config files or env vars)
 NEO4J_URI = "bolt://localhost:7687"
 NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "admin"
+NEO4J_PASSWORD = "neo4j"
 
 
 @pytest.fixture(scope="module")
