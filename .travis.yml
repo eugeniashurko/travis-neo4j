@@ -13,7 +13,6 @@ install:
   - sudo apt-get update
   - sudo add-apt-repository universe
   - sudo apt-get install neo4j=1:4.2.3
-  - sudo service neo4j start
   - sudo neo4j-admin set-initial-password neo4j
   - cat /etc/neo4j/neo4j.conf
   - echo 'dbms.connector.bolt.listen_address=0.0.0.0:7687' | sudo tee -a /etc/neo4j/neo4j.conf
