@@ -16,7 +16,9 @@ install:
   - pip install .[dev]
   - sudo service neo4j start
   - sudo neo4j-admin set-initial-password neo4j
-  - sudo echo 'dbms.connector.bolt.listen_address=0.0.0.0:7687' >> $NEO4J_HOME/conf/neo4j.conf
+  - cat /etc/neo4j/neo4j.conf
+  - echo 'dbms.connector.bolt.listen_address=0.0.0.0:7687' | sudo tee -a /etc/neo4j/neo4j.conf
+  - cat /etc/neo4j/neo4j.conf
   - sudo service neo4j restart
   
  
