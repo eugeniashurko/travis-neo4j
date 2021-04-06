@@ -13,6 +13,7 @@ install:
   - sudo add-apt-repository universe
   - sudo apt-get install neo4j=1:4.2.3
   - pip install .[dev]
+  - sudo systemctl start neo4j
   - sudo neo4j-admin set-initial-password admin
 
 services:
