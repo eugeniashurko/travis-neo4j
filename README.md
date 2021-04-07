@@ -1,3 +1,3 @@
-# travis_test
+# travis-neo4j
 
-hello, it's a travis test repo for neo4j configs
+This is a test repository for configuring Travis builds that require Neo4j (+ the Graph Data Science Library) installation
